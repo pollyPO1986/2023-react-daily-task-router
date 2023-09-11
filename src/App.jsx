@@ -4,16 +4,6 @@ import Register from './pages/register.jsx';
 import Login from './pages/login.jsx';
 import Todo from './pages/todo.jsx';
 
-// const Todo = () => {
-//   return <p>這是 Todo 頁面</p>;
-// };
-// const Login = () => {
-//   return <p>這是登入頁面</p>;
-// };
-// const Register = () => {
-//   return <p>這是註冊頁面</p>;
-// };
-
 function App () {
   return (
     <div className="container">
