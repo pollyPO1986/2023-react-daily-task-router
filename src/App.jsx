@@ -1,17 +1,20 @@
 import './App.css';
-import { HashRouter, NavLink } from 'react-router-dom';
+import { HashRouter, NavLink, Routes, Route } from 'react-router-dom';
+import Register from './pages/register.jsx';
+import Login from './pages/login.jsx';
+import Todo from './pages/todo.jsx';
 
-const Todo = () => {
-  return <p>這是 Todo 頁面</p>;
-};
-const Login = () => {
-  return <p>這是登入頁面</p>;
-};
-const Register = () => {
-  return <p>這是註冊頁面</p>;
-};
+// const Todo = () => {
+//   return <p>這是 Todo 頁面</p>;
+// };
+// const Login = () => {
+//   return <p>這是登入頁面</p>;
+// };
+// const Register = () => {
+//   return <p>這是註冊頁面</p>;
+// };
 
-function App() {
+function App () {
   return (
     <div className="container">
       <HashRouter>
@@ -30,6 +33,11 @@ function App() {
           </NavLink>
         </div>
         {/* Routes, Route 練習區 */}
+        <Routes>
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/todo" element={<Todo />} />
+        </Routes>
         {/* 練習區 */}
       </HashRouter>
     </div>
